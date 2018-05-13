@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$#" -eq 0 ]; then
+  echo "No name entered."
+else
+  names=( "$@" )
+  go run SoundexConverter.go "$@"
+fi
